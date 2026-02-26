@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main ()
+{
+ int a[100],n,i,c=0;
+ printf("enter the size of array");
+ scanf("%d",&n);
+ for (i=0;i<n;i++)
+ {
+     printf("enter the age of the people");
+     scanf("%d",&a[i]);
+ }
+ for (i=0;i<n;i++)
+ {
+     if (a[i]>=18)
+     {
+         c=c+1;
+     }
+ }
+ printf("only %d out of %d people are eligible for voting",c,n);
+ return 0;
+}
