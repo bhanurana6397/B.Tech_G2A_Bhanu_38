@@ -1,0 +1,40 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+     char a[100],b[100];
+     int i,n,sum=0;
+    printf("enter the no of alphabets in the word \n");
+    scanf("%d",&n);
+    printf("enter the elements of array\n");
+    for (i=0;i<n;i++)
+    {
+        scanf(" %c",&a[i]);
+        
+    }
+    for (i=0;i<n;i++)
+    {
+        b[i]=a[n-1-i];
+    }
+    for (i=0;i<n;i++)
+    {
+      if (b[i]==a[i])
+      {
+          sum +=1;
+      }
+    }
+    if (sum==n)
+    {
+        printf("palindrome");
+    }
+    else
+    {
+     printf("not palindrome");
+     
+    }
+    
+    
+   
+    return 0;
+}
